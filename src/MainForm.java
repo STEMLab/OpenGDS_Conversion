@@ -1,18 +1,32 @@
+import sun.applet.Main;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.io.File;
 
-public class mainForm {
+public class MainForm {
     private JPanel panelMain;
     private JComboBox comboBoxSourceFormat;
     private JComboBox comboBoxTargetFormat;
     private JButton buttonTransform;
     private JTextArea textAreaSourceInfo;
     private JTextArea textAreaTargetInfo;
+
     private final static String newline = "\n";
 
-    public mainForm() {
+    private String sourceFileLocation = null;
+    private String targetFileLocation = null;
+
+    public MainForm() {
+        JFrame mainFrame = new JFrame("OpenGDS/Conversion");
+        mainFrame.setContentPane(panelMain);
+        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        mainFrame.setSize(800,400);
+        mainFrame.pack();
+        mainFrame.setVisible(true);
+        mainFrame.setJMenuBar(createMenuBar());
+
         comboBoxSourceFormat.addItem("CityGML");
         comboBoxTargetFormat.addItem("IndoorGML");
 
@@ -22,19 +36,24 @@ public class mainForm {
         textAreaSourceInfo.append("File Size : " + Long.toString(sfile.length()) + "Bytes" + newline);
         textAreaTargetInfo.append("File Path : D:\\Data\\IndoorGMLSample.gml" + newline);
         textAreaTargetInfo.append("File Format : IndoorGML" + newline);
+        buttonTransform.addActionListener(e -> {
+            if(sourceFileLocation != null && targetFileLocation != null) {
+
+            }
+        });
     }
 
-    private static JMenuBar createMenuBar() {
+    private JMenuBar createMenuBar() {
         JMenuBar jMenuBar = new JMenuBar();
 
         JMenu fileMenu = new JMenu("File");
         fileMenu.setMnemonic(KeyEvent.VK_F);
 
-        JMenuItem openSourceFile = new JMenuItem("Open Source File");
+        JMenuItem openSourceFile = new JMenuItem("Set File Location");
         openSourceFile.setMnemonic(KeyEvent.VK_S);
-        openSourceFile.setToolTipText("Select source file");
+        openSourceFile.setToolTipText("Select source and target file location");
         openSourceFile.addActionListener((ActionEvent event) -> {
-
+            SettingForm settingForm = new SettingForm(this);
         });
 
         fileMenu.add(openSourceFile);
@@ -58,11 +77,22 @@ public class mainForm {
     }
 
     public static void main(String[] args) {
-        JFrame mainFrame = new JFrame("OpenGDS/Conversion");
-        mainFrame.setContentPane(new mainForm().panelMain);
-        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        mainFrame.pack();
-        mainFrame.setVisible(true);
-        mainFrame.setJMenuBar(createMenuBar());
+        MainForm mainForm = new MainForm();
+    }
+
+    public String getSourceFileLocation() {
+        return sourceFileLocation;
+    }
+
+    public void setSourceFileLocation(String sourceFileLocation) {
+        this.sourceFileLocation = sourceFileLocation;
+    }
+
+    public String getTargetFileLocation() {
+        return targetFileLocation;
+    }
+
+    public void setTargetFileLocation(String targetFileLocation) {
+        this.targetFileLocation = targetFileLocation;
     }
 }
