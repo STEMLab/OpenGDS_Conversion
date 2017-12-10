@@ -1,9 +1,7 @@
-import sun.applet.Main;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
-import java.io.File;
+import java.io.*;
 
 public class MainForm {
     private JPanel panelMain;
@@ -17,6 +15,8 @@ public class MainForm {
 
     private String sourceFileLocation = null;
     private String targetFileLocation = null;
+    private String transRuleLocation = null;
+    private String[] formatList = {"IndoorGML", "CityGML", "SimpleFeature GML", "KML", "GeoJSON"};
 
     public MainForm() {
         JFrame mainFrame = new JFrame("OpenGDS/Conversion");
@@ -27,16 +27,62 @@ public class MainForm {
         mainFrame.setVisible(true);
         mainFrame.setJMenuBar(createMenuBar());
 
-        comboBoxSourceFormat.addItem("CityGML");
-        comboBoxTargetFormat.addItem("IndoorGML");
+        for(int i = 0; i < formatList.length; i++) {
+            comboBoxSourceFormat.addItem(formatList[i]);
+            comboBoxTargetFormat.addItem(formatList[i]);
+        }
 
-        File sfile = new File("D:\\Data\\CityGMLSample.gml");
-        textAreaSourceInfo.append("File Path : " + sfile.getAbsolutePath() + newline);
-        textAreaSourceInfo.append("File Format : CityGML" + newline);
-        textAreaSourceInfo.append("File Size : " + Long.toString(sfile.length()) + "Bytes" + newline);
-        textAreaTargetInfo.append("File Path : D:\\Data\\IndoorGMLSample.gml" + newline);
-        textAreaTargetInfo.append("File Format : IndoorGML" + newline);
         buttonTransform.addActionListener(e -> {
+            try {
+                String java_jar_Loc = "\"D:\\Program Files\\wetransform\\HALE\\jre\\bin\\java\"";
+                String hale_Exec_Loc = "\"D:\\Program Files\\wetransform\\HALE\\plugins\\org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar\"";
+                String transform_Rule_Loc = "\"" + transRuleLocation + "\"";
+                String source_Loc = "\"" + sourceFileLocation + "\"";
+                String target_Loc = "\"" + targetFileLocation + "\"";
+                String preset;
+                if(comboBoxTargetFormat.getSelectedItem().toString().equals("SimpleFeature GML")){
+                    preset = "CustomGML";
+                }
+                else {
+                    preset = comboBoxTargetFormat.getSelectedItem().toString();
+                }
+
+                String batch_Command = java_jar_Loc + " -jar " + hale_Exec_Loc + " -application hale.transform -project " + transform_Rule_Loc + " -source " + source_Loc + " -target " + target_Loc + " -preset " + preset;
+                System.out.println(batch_Command);
+                File batchFile = new File("transform.bat");
+                FileWriter fw = new FileWriter(batchFile, false);
+                fw.write(batch_Command);
+                fw.flush();
+                fw.close();
+
+                String[] command = new String[] {"transform.bat"};
+
+                ProcessBuilder builder = new ProcessBuilder(command);
+                //builder.redirectOutput(ProcessBuilder.Redirect.INHERIT);
+                //builder.redirectError(ProcessBuilder.Redirect.INHERIT);
+                Process process = builder.start();
+                BufferedReader reader =  new BufferedReader(new InputStreamReader(process.getInputStream()));
+                StringBuilder sb = new StringBuilder();
+                String line = null;
+                while ( (line = reader.readLine()) != null) {
+                    sb.append(line + newline);
+                }
+                textAreaTargetInfo.setText(sb.toString());
+
+                
+                /*
+                command = new String[] {"D:\\Program Files\\wetransform\\HALE\\clisample\\transform_GML2CityGML.bat"};
+                builder = new ProcessBuilder(command);
+                process = builder.start();
+                reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                while ( (line = reader.readLine()) != null) {}
+                textAreaTargetInfo.setText(sb.toString());
+*/
+                clear();
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
+
             if(sourceFileLocation != null && targetFileLocation != null) {
 
             }
@@ -94,5 +140,39 @@ public class MainForm {
 
     public void setTargetFileLocation(String targetFileLocation) {
         this.targetFileLocation = targetFileLocation;
+    }
+
+    public String getTransRuleLocation() {
+        return transRuleLocation;
+    }
+
+    public void setTransRuleLocation(String transRuleLocation) {
+        this.transRuleLocation = transRuleLocation;
+    }
+
+    public void refresh() {
+        if(sourceFileLocation != null) {
+            File file = new File(sourceFileLocation);
+            textAreaSourceInfo.append("Source File Path : " + file.getAbsolutePath() + newline);
+            textAreaSourceInfo.append("Source File Format : " + comboBoxSourceFormat.getSelectedItem().toString() + newline);
+            textAreaSourceInfo.append("Source File Size : " + Long.toString(file.length()) + "Bytes" + newline);
+        }
+
+        if(targetFileLocation != null) {
+            textAreaSourceInfo.append("Target File Path : " + targetFileLocation + newline);
+            textAreaSourceInfo.append("Target File Format : " + comboBoxTargetFormat.getSelectedItem().toString() + newline);
+        }
+
+        if(transRuleLocation != null) {
+            textAreaSourceInfo.append("Transformation Rule Path : " + transRuleLocation + newline);
+        }
+
+        textAreaTargetInfo.setText("");
+    }
+
+    public void clear() {
+        sourceFileLocation = null;
+        targetFileLocation = null;
+        transRuleLocation = null;
     }
 }
