@@ -69,7 +69,7 @@ public class MainForm {
                 }
                 textAreaTargetInfo.setText(sb.toString());
 
-                
+
                 /*
                 command = new String[] {"D:\\Program Files\\wetransform\\HALE\\clisample\\transform_GML2CityGML.bat"};
                 builder = new ProcessBuilder(command);
