@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="OpenGDS_Conversion:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/OpenGDS_Conversion_jar</output-path>
+    <root id="archive" name="OpenGDS_Conversion.jar">
+      <element id="module-output" name="OpenGDS_Conversion" />
+    </root>
+  </artifact>
+</component>
