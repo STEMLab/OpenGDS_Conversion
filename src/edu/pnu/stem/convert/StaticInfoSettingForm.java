@@ -37,6 +37,8 @@ public class StaticInfoSettingForm {
                 textFieldHALELoc.setText(file.getAbsolutePath());
 
                 prefs.put(HALE_DIR, file.getAbsolutePath());
+                String haleDir = prefs.get(HALE_DIR, null);
+                System.out.println(haleDir);
             }
         });
         buttonGDALLoad.addActionListener(e -> {

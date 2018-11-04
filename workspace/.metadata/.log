@@ -1858,3 +1858,74 @@ Command-line arguments:  -application hale.transform -project C:\Transform\TranR
 
 !ENTRY eu.esdihumboldt.hale.common.align 1 0 2017-12-11 01:42:52.852
 !MESSAGE Instance transformation - Finished successfully
+!SESSION 2018-11-04 17:45:22.933 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -application hale.transform -project null -source D:\Transform\Data\Source\kmlSample.kml -target D:\Transform\Data\Result\kml2geojson.json -preset CityGML
+Command-line arguments:  -application hale.transform -project null -source D:\Transform\Data\Source\kmlSample.kml -target D:\Transform\Data\Result\kml2geojson.json -preset CityGML
+
+!ENTRY eu.esdihumboldt.hale.common.core 2 0 2018-11-04 17:45:28.560
+!MESSAGE Could not read input to determine content type
+!STACK 0
+java.io.FileNotFoundException: C:\Users\dprt-taehoon\IdeaProjects\OpenGDS_Conversion\null (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at java.net.URL.openStream(URL.java:1045)
+	at eu.esdihumboldt.hale.common.core.io.supplier.DefaultInputSupplier.resolve(DefaultInputSupplier.java:94)
+	at eu.esdihumboldt.hale.common.core.io.supplier.DefaultInputSupplier.getInput(DefaultInputSupplier.java:60)
+	at eu.esdihumboldt.hale.common.core.io.supplier.DefaultInputSupplier.getInput(DefaultInputSupplier.java:1)
+	at eu.esdihumboldt.hale.common.core.io.HaleIO.findContentTypesFor(HaleIO.java:240)
+	at eu.esdihumboldt.hale.common.core.io.HaleIO.findContentType(HaleIO.java:425)
+	at eu.esdihumboldt.hale.common.core.io.HaleIO.findIOProvider(HaleIO.java:452)
+	at eu.esdihumboldt.hale.common.headless.impl.ProjectTransformationEnvironment.<init>(ProjectTransformationEnvironment.java:167)
+	at eu.esdihumboldt.hale.app.transform.ExecTransformation.loadProject(ExecTransformation.java:287)
+	at eu.esdihumboldt.hale.app.transform.ExecTransformation.run(ExecTransformation.java:203)
+	at eu.esdihumboldt.hale.app.transform.ExecTransformation$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at eu.esdihumboldt.hale.app.transform.ExecApplication.run(ExecApplication.groovy:70)
+	at eu.esdihumboldt.hale.app.transform.ExecApplication.run(ExecApplication.groovy)
+	at eu.esdihumboldt.hale.common.app.AbstractApplication.run(AbstractApplication.java:51)
+	at eu.esdihumboldt.hale.common.app.AbstractApplication.start(AbstractApplication.java:33)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.equinox.internal.app.AnyThreadAppLauncher.run(AnyThreadAppLauncher.java:26)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY eu.esdihumboldt.hale.common.core 2 0 2018-11-04 17:45:28.563
+!MESSAGE Could not read input to determine content type
+!STACK 0
+java.io.FileNotFoundException: C:\Users\dprt-taehoon\IdeaProjects\OpenGDS_Conversion\null (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at java.net.URL.openStream(URL.java:1045)
+	at eu.esdihumboldt.hale.common.core.io.supplier.DefaultInputSupplier.resolve(DefaultInputSupplier.java:94)
+	at eu.esdihumboldt.hale.common.core.io.supplier.DefaultInputSupplier.getInput(DefaultInputSupplier.java:60)
+	at eu.esdihumboldt.hale.common.core.io.supplier.DefaultInputSupplier.getInput(DefaultInputSupplier.java:1)
+	at eu.esdihumboldt.hale.common.core.io.HaleIO.findContentTypesFor(HaleIO.java:270)
+	at eu.esdihumboldt.hale.common.core.io.HaleIO.findContentType(HaleIO.java:425)
+	at eu.esdihumboldt.hale.common.core.io.HaleIO.findIOProvider(HaleIO.java:452)
+	at eu.esdihumboldt.hale.common.headless.impl.ProjectTransformationEnvironment.<init>(ProjectTransformationEnvironment.java:167)
+	at eu.esdihumboldt.hale.app.transform.ExecTransformation.loadProject(ExecTransformation.java:287)
+	at eu.esdihumboldt.hale.app.transform.ExecTransformation.run(ExecTransformation.java:203)
+	at eu.esdihumboldt.hale.app.transform.ExecTransformation$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at eu.esdihumboldt.hale.app.transform.ExecApplication.run(ExecApplication.groovy:70)
+	at eu.esdihumboldt.hale.app.transform.ExecApplication.run(ExecApplication.groovy)
+	at eu.esdihumboldt.hale.common.app.AbstractApplication.run(AbstractApplication.java:51)
+	at eu.esdihumboldt.hale.common.app.AbstractApplication.start(AbstractApplication.java:33)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.equinox.internal.app.AnyThreadAppLauncher.run(AnyThreadAppLauncher.java:26)
+	at java.lang.Thread.run(Thread.java:745)

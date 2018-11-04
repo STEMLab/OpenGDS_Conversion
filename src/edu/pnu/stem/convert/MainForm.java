@@ -96,6 +96,8 @@ public class MainForm {
                 }
                 else {
                     // Conversion by GDAL
+                    sourceFileLocation  = "\"" + dynamicPrefs.get(DynamicInfoSettingForm.SOURCE_DIR, null) + "\"";
+                    targetFileLocation  = "\"" + dynamicPrefs.get(DynamicInfoSettingForm.TARGET_DIR, null) + "\"";
                     String preset;
                     if(Objects.requireNonNull(comboBoxTargetFormat.getSelectedItem()).toString().equals(GISFormat.SimpleFeatureGML.name())){
                         preset = "GML";
@@ -121,6 +123,7 @@ public class MainForm {
                     while ( (line = reader.readLine()) != null) {
                         sb.append(line + newline);
                     }
+                    sb.append("Conversion complete!!" + newline);
                     textAreaTargetInfo.setText(sb.toString());
                 }
                 clear();
@@ -145,9 +148,6 @@ public class MainForm {
 
         fileMenu.add(dynamicInfo);
 
-        JMenu presetMenu = new JMenu("Preset");
-        fileMenu.setMnemonic(KeyEvent.VK_P);
-
         JMenuItem staticInfo = new JMenuItem("Set Static Location Information");
         staticInfo.setMnemonic(KeyEvent.VK_D);
         staticInfo.setToolTipText("Select JAR, HALE, GDAL execute file location");
@@ -155,8 +155,13 @@ public class MainForm {
             new StaticInfoSettingForm(this);
         });
 
-        presetMenu.add(staticInfo);
+        fileMenu.add(staticInfo);
+        jMenuBar.add(fileMenu);
+
         /*
+        JMenu presetMenu = new JMenu("Preset");
+        fileMenu.setMnemonic(KeyEvent.VK_P);
+
         JMenuItem dbconnect = new JMenuItem("PostgreSQL Connect");
         dbconnect.setMnemonic(KeyEvent.VK_D);
         dbconnect.setToolTipText("Set information for connect postgreSQL");
@@ -164,9 +169,8 @@ public class MainForm {
 
         });
         presetMenu.add(dbconnect);
-        */
-        jMenuBar.add(fileMenu);
         jMenuBar.add(presetMenu);
+        */
 
         return jMenuBar;
     }
@@ -176,22 +180,25 @@ public class MainForm {
     }
 
     void refresh() {
-        if(sourceFileLocation != null) {
+        Preferences dynamicPrefs = Preferences.userNodeForPackage(DynamicInfoSettingForm.class);
+        if(dynamicPrefs.get(DynamicInfoSettingForm.SOURCE_DIR, null) != null) {
             File file = new File(sourceFileLocation);
             textAreaSourceInfo.append("Source File Path : " + file.getAbsolutePath() + newline);
             textAreaSourceInfo.append("Source File Format : " + Objects.requireNonNull(comboBoxSourceFormat.getSelectedItem()).toString() + newline);
             textAreaSourceInfo.append("Source File Size : " + Long.toString(file.length()) + "Bytes" + newline);
         }
-        if(targetFileLocation != null) {
+        if(dynamicPrefs.get(DynamicInfoSettingForm.TARGET_DIR, null) != null) {
             textAreaSourceInfo.append("Target File Path : " + targetFileLocation + newline);
             textAreaSourceInfo.append("Target File Format : " + Objects.requireNonNull(comboBoxTargetFormat.getSelectedItem()).toString() + newline);
         }
-        if(transRuleLocation != null) {
+        if(dynamicPrefs.get(DynamicInfoSettingForm.TRANS_RULE_DIR, null) != null) {
             textAreaSourceInfo.append("Transformation Rule Path : " + transRuleLocation + newline);
         }
+        /*
         if(sourceFileLocation != null || targetFileLocation != null || transRuleLocation != null) {
             textAreaSourceInfo.append("=================================================" + newline + newline);
         }
+        */
 
         textAreaTargetInfo.setText("");
     }

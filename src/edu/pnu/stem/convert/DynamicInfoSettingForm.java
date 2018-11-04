@@ -40,6 +40,8 @@ public class DynamicInfoSettingForm {
                 textFieldSourceFileLocation.setText(file.getAbsolutePath());
 
                 prefs.put(SOURCE_DIR, file.getAbsolutePath());
+                String result = prefs.get(SOURCE_DIR, null);
+                System.out.println(result);
             }
         });
         buttonTargetFileLoad.addActionListener(e -> {
