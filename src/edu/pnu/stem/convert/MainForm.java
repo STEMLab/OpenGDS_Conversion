@@ -57,74 +57,88 @@ public class MainForm {
                         JOptionPane.showMessageDialog(null, "Please set static information", "Error", JOptionPane.ERROR_MESSAGE);
                     }
                     else {
-                        if(transRuleLocation == null
-                                || sourceFileLocation == null
-                                || targetFileLocation == null) {
-                            new DynamicInfoSettingForm(this);
-                        }
-
                         transRuleLocation   = "\"" + dynamicPrefs.get(DynamicInfoSettingForm.TRANS_RULE_DIR, null) + "\"";
                         sourceFileLocation  = "\"" + dynamicPrefs.get(DynamicInfoSettingForm.SOURCE_DIR, null) + "\"";
                         targetFileLocation  = "\"" + dynamicPrefs.get(DynamicInfoSettingForm.TARGET_DIR, null) + "\"";
-                        String preset;
-                        if(Objects.requireNonNull(comboBoxTargetFormat.getSelectedItem()).toString().equals(GISFormat.SimpleFeatureGML.name())){
-                            preset = "CustomGML";
+
+                        if(transRuleLocation == null
+                                || sourceFileLocation == null
+                                || targetFileLocation == null) {
+                            JOptionPane.showMessageDialog(null, "Please set dynamic information", "Error", JOptionPane.ERROR_MESSAGE);
                         }
                         else {
-                            preset = comboBoxTargetFormat.getSelectedItem().toString();
-                        }
-                        String batch_Command = jarLocation + " -jar " + haleLocation + " -application hale.transform -project " + transRuleLocation + " -source " + sourceFileLocation + " -target " + targetFileLocation + " -preset " + preset;
-                        System.out.println(batch_Command);
+                            refresh();
+                            String preset;
+                            if(Objects.requireNonNull(comboBoxTargetFormat.getSelectedItem()).toString().equals(GISFormat.SimpleFeatureGML.name())){
+                                preset = "CustomGML";
+                            }
+                            else {
+                                preset = comboBoxTargetFormat.getSelectedItem().toString();
+                            }
+                            String batch_Command = jarLocation + " -jar " + haleLocation + " -application hale.transform -project " + transRuleLocation + " -source " + sourceFileLocation + " -target " + targetFileLocation + " -preset " + preset;
+                            System.out.println(batch_Command);
 
-                        File batchFile = new File("workspace\\transform.bat");
-                        FileWriter fw = new FileWriter(batchFile, false);
-                        fw.write(batch_Command);
-                        fw.flush();
-                        fw.close();
+                            File batchFile = new File("workspace\\transform.bat");
+                            FileWriter fw = new FileWriter(batchFile, false);
+                            fw.write(batch_Command);
+                            fw.flush();
+                            fw.close();
 
-                        String[] command = new String[] {"workspace\\transform.bat"};
-                        ProcessBuilder builder = new ProcessBuilder(command);
-                        Process process = builder.start();
-                        BufferedReader reader =  new BufferedReader(new InputStreamReader(process.getInputStream()));
-                        StringBuilder sb = new StringBuilder();
-                        String line;
-                        while ( (line = reader.readLine()) != null) {
-                            sb.append(line + newline);
+                            String[] command = new String[] {"workspace\\transform.bat"};
+                            ProcessBuilder builder = new ProcessBuilder(command);
+                            Process process = builder.start();
+                            BufferedReader reader =  new BufferedReader(new InputStreamReader(process.getInputStream()));
+                            StringBuilder sb = new StringBuilder();
+                            String line;
+                            while ( (line = reader.readLine()) != null) {
+                                sb.append(line + newline);
+                            }
+                            textAreaTargetInfo.setText(sb.toString());
                         }
-                        textAreaTargetInfo.setText(sb.toString());
                     }
                 }
                 else {
                     // Conversion by GDAL
-                    sourceFileLocation  = "\"" + dynamicPrefs.get(DynamicInfoSettingForm.SOURCE_DIR, null) + "\"";
-                    targetFileLocation  = "\"" + dynamicPrefs.get(DynamicInfoSettingForm.TARGET_DIR, null) + "\"";
-                    String preset;
-                    if(Objects.requireNonNull(comboBoxTargetFormat.getSelectedItem()).toString().equals(GISFormat.SimpleFeatureGML.name())){
-                        preset = "GML";
+                    if(staticPrefs.get(StaticInfoSettingForm.GDAL_DIR, null) == null) {
+                        JOptionPane.showMessageDialog(null, "Please set static information", "Error", JOptionPane.ERROR_MESSAGE);
                     }
                     else {
-                        preset = comboBoxTargetFormat.getSelectedItem().toString();
-                    }
-                    String batch_Command = ogr2ogrLocation + " -f " + preset + " "  + targetFileLocation + " " + sourceFileLocation;
-                    System.out.println(batch_Command);
+                        sourceFileLocation  = "\"" + dynamicPrefs.get(DynamicInfoSettingForm.SOURCE_DIR, null) + "\"";
+                        targetFileLocation  = "\"" + dynamicPrefs.get(DynamicInfoSettingForm.TARGET_DIR, null) + "\"";
 
-                    File batchFile = new File("workspace\\transform.bat");
-                    FileWriter fw = new FileWriter(batchFile, false);
-                    fw.write(batch_Command);
-                    fw.flush();
-                    fw.close();
+                        if(sourceFileLocation == null  || targetFileLocation == null) {
+                            JOptionPane.showMessageDialog(null, "Please set dynamic information", "Error", JOptionPane.ERROR_MESSAGE);
+                        }
+                        else {
+                            refresh();
+                            String preset;
+                            if (Objects.requireNonNull(comboBoxTargetFormat.getSelectedItem()).toString().equals(GISFormat.SimpleFeatureGML.name())) {
+                                preset = "GML";
+                            } else {
+                                preset = comboBoxTargetFormat.getSelectedItem().toString();
+                            }
+                            String batch_Command = ogr2ogrLocation + " -f " + preset + " " + targetFileLocation + " " + sourceFileLocation;
+                            System.out.println(batch_Command);
 
-                    String[] command = new String[] {"workspace\\transform.bat"};
-                    ProcessBuilder builder = new ProcessBuilder(command);
-                    Process process = builder.start();
-                    BufferedReader reader =  new BufferedReader(new InputStreamReader(process.getInputStream()));
-                    StringBuilder sb = new StringBuilder();
-                    String line;
-                    while ( (line = reader.readLine()) != null) {
-                        sb.append(line + newline);
+                            File batchFile = new File("workspace\\transform.bat");
+                            FileWriter fw = new FileWriter(batchFile, false);
+                            fw.write(batch_Command);
+                            fw.flush();
+                            fw.close();
+
+                            String[] command = new String[]{"workspace\\transform.bat"};
+                            ProcessBuilder builder = new ProcessBuilder(command);
+                            Process process = builder.start();
+                            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                            StringBuilder sb = new StringBuilder();
+                            String line;
+                            while ((line = reader.readLine()) != null) {
+                                sb.append(line + newline);
+                            }
+                            sb.append("Conversion complete!!" + newline);
+                            textAreaTargetInfo.setText(sb.toString());
+                        }
                     }
-                    sb.append("Conversion complete!!" + newline);
-                    textAreaTargetInfo.setText(sb.toString());
                 }
                 clear();
             } catch (IOException e1) {
@@ -182,17 +196,17 @@ public class MainForm {
     void refresh() {
         Preferences dynamicPrefs = Preferences.userNodeForPackage(DynamicInfoSettingForm.class);
         if(dynamicPrefs.get(DynamicInfoSettingForm.SOURCE_DIR, null) != null) {
-            File file = new File(sourceFileLocation);
+            File file = new File(dynamicPrefs.get(DynamicInfoSettingForm.SOURCE_DIR, null));
             textAreaSourceInfo.append("Source File Path : " + file.getAbsolutePath() + newline);
             textAreaSourceInfo.append("Source File Format : " + Objects.requireNonNull(comboBoxSourceFormat.getSelectedItem()).toString() + newline);
             textAreaSourceInfo.append("Source File Size : " + Long.toString(file.length()) + "Bytes" + newline);
         }
         if(dynamicPrefs.get(DynamicInfoSettingForm.TARGET_DIR, null) != null) {
-            textAreaSourceInfo.append("Target File Path : " + targetFileLocation + newline);
+            textAreaSourceInfo.append("Target File Path : " + dynamicPrefs.get(DynamicInfoSettingForm.TARGET_DIR, null) + newline);
             textAreaSourceInfo.append("Target File Format : " + Objects.requireNonNull(comboBoxTargetFormat.getSelectedItem()).toString() + newline);
         }
         if(dynamicPrefs.get(DynamicInfoSettingForm.TRANS_RULE_DIR, null) != null) {
-            textAreaSourceInfo.append("Transformation Rule Path : " + transRuleLocation + newline);
+            textAreaSourceInfo.append("Transformation Rule Path : " + dynamicPrefs.get(DynamicInfoSettingForm.TRANS_RULE_DIR, null) + newline);
         }
         /*
         if(sourceFileLocation != null || targetFileLocation != null || transRuleLocation != null) {

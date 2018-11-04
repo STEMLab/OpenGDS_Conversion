@@ -28,8 +28,19 @@ public class StaticInfoSettingForm {
         settingFrame.pack();
         settingFrame.setVisible(true);
 
+        if(prefs.get(HALE_DIR, null) != null) {
+            textFieldHALELoc.setText(prefs.get(HALE_DIR, null));
+        }
+        if(prefs.get(GDAL_DIR, null) != null){
+            textFieldGDALLoc.setText(prefs.get(GDAL_DIR, null));
+        }
+
         buttonHALELoad.addActionListener(e -> {
             JFileChooser fileChooser = new JFileChooser();
+            if(prefs.get(HALE_DIR, null) != null) {
+                File prevFile = new File(prefs.get(HALE_DIR, null));
+                fileChooser.setCurrentDirectory(prevFile);
+            }
             fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
             int returnVal = fileChooser.showOpenDialog(settingFrame);
             if (returnVal == JFileChooser.APPROVE_OPTION) {
@@ -37,12 +48,14 @@ public class StaticInfoSettingForm {
                 textFieldHALELoc.setText(file.getAbsolutePath());
 
                 prefs.put(HALE_DIR, file.getAbsolutePath());
-                String haleDir = prefs.get(HALE_DIR, null);
-                System.out.println(haleDir);
             }
         });
         buttonGDALLoad.addActionListener(e -> {
             JFileChooser fileChooser = new JFileChooser();
+            if(prefs.get(GDAL_DIR, null) != null){
+                File prevFile = new File(prefs.get(GDAL_DIR, null));
+                fileChooser.setCurrentDirectory(prevFile);
+            }
             fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
             int returnVal = fileChooser.showOpenDialog(settingFrame);
             if (returnVal == JFileChooser.APPROVE_OPTION) {

@@ -31,22 +31,37 @@ public class DynamicInfoSettingForm {
         settingFrame.pack();
         settingFrame.setVisible(true);
 
+        if(prefs.get(SOURCE_DIR, null) != null) {
+            textFieldSourceFileLocation.setText(prefs.get(SOURCE_DIR, null));
+        }
+        if(prefs.get(TARGET_DIR, null) != null) {
+            textFieldTargetFileLocation.setText(prefs.get(TARGET_DIR, null));
+        }
+        if(prefs.get(TRANS_RULE_DIR, null) != null) {
+            textFieldTransformRuleLocation.setText(prefs.get(TRANS_RULE_DIR, null));
+        }
+
         buttonSourceFileLoad.addActionListener(e -> {
             JFileChooser fileChooser = new JFileChooser();
-            fileChooser.setCurrentDirectory(new File("C:\\Transform"));
+            if(prefs.get(SOURCE_DIR, null) != null) {
+                File prevFile = new File(prefs.get(SOURCE_DIR, null));
+                fileChooser.setCurrentDirectory(prevFile);
+            }
+
             int returnVal = fileChooser.showOpenDialog(settingFrame);
             if (returnVal == JFileChooser.APPROVE_OPTION) {
                 File file = fileChooser.getSelectedFile();
                 textFieldSourceFileLocation.setText(file.getAbsolutePath());
 
                 prefs.put(SOURCE_DIR, file.getAbsolutePath());
-                String result = prefs.get(SOURCE_DIR, null);
-                System.out.println(result);
             }
         });
         buttonTargetFileLoad.addActionListener(e -> {
             JFileChooser fileChooser = new JFileChooser();
-            fileChooser.setCurrentDirectory(new File("C:\\Transform"));
+            if(prefs.get(TARGET_DIR, null) != null) {
+                File prevFile = new File(prefs.get(TARGET_DIR, null));
+                fileChooser.setCurrentDirectory(prevFile);
+            }
 
             int returnVal = fileChooser.showOpenDialog(settingFrame);
             if (returnVal == JFileChooser.APPROVE_OPTION) {
@@ -58,7 +73,10 @@ public class DynamicInfoSettingForm {
         });
         buttonTransRuleLoad.addActionListener(e -> {
             JFileChooser fileChooser = new JFileChooser();
-            fileChooser.setCurrentDirectory(new File("C:\\Transform"));
+            if(prefs.get(TRANS_RULE_DIR, null) != null) {
+                File prevFile = new File(prefs.get(TRANS_RULE_DIR, null));
+                fileChooser.setCurrentDirectory(prevFile);
+            }
 
             int returnVal = fileChooser.showOpenDialog(settingFrame);
             if (returnVal == JFileChooser.APPROVE_OPTION) {

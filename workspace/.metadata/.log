@@ -1929,3 +1929,905 @@ java.io.FileNotFoundException: C:\Users\dprt-taehoon\IdeaProjects\OpenGDS_Conver
 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
 	at org.eclipse.equinox.internal.app.AnyThreadAppLauncher.run(AnyThreadAppLauncher.java:26)
 	at java.lang.Thread.run(Thread.java:745)
+!SESSION 2018-11-04 18:10:36.871 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -application hale.transform -project D:\Transform\TranRule\IndoorGML2CityGML.halez -source D:\Transform\Data\Source\IndoorGMLSample.gml -target D:\Transform\Data\Result\Indoor2City.gml -preset CityGML
+Command-line arguments:  -application hale.transform -project D:\Transform\TranRule\IndoorGML2CityGML.halez -source D:\Transform\Data\Source\IndoorGMLSample.gml -target D:\Transform\Data\Result\Indoor2City.gml -preset CityGML
+
+!ENTRY eu.esdihumboldt.hale.common.headless 1 0 2018-11-04 18:10:42.897
+!MESSAGE hale project archive import
+!SUBENTRY 1 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.897
+!MESSAGE [18:10:40] Starting task 'Load project'...
+!SUBENTRY 1 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.897
+!MESSAGE [18:10:41] No handler for external project file styles.sld found.
+!SUBENTRY 1 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.897
+!MESSAGE [18:10:41] Finished task 'Load project'.
+!SUBENTRY 1 eu.esdihumboldt.hale.common.headless 1 0 2018-11-04 18:10:42.897
+!MESSAGE [18:10:41] XML schema import
+!SUBENTRY 2 eu.esdihumboldt.hale.common.headless 1 0 2018-11-04 18:10:42.897
+!MESSAGE 370 information messages (listing 100)
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.897
+!MESSAGE [18:10:41] Starting task 'Loading schema'...
+!SUBENTRY 3 eu.esdihumboldt.hale.io.xsd 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Base URI for schemas to be used: file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/dynamicFeature.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/feature.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/geometryAggregates.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/geometryPrimitives.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/geometryBasic2d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/0/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/0/0/measures.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/0/0/0/units.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/0/0/0/0/dictionary.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/0/0/0/0/0/gmlBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/0/0/0/0/0/0/basicTypes.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/0/0/0/0/0/1/xlink.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/0/0/0/0/0/1/0/xml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/1/temporal.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/0/0/0/0/0/gmlBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/1/direction.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/0/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/1/topology.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/1/0/geometryComplexes.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/geometryAggregates.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/2/coverage.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.898
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/feature.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/2/0/valueObjects.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/0/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/1/temporal.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/2/1/grids.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/0/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/geometryAggregates.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/coordinateReferenceSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/coordinateSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/referenceSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/0/0/0/0/dictionary.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/gmd.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/metadataApplication.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/0/0/basicTypes.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/0/0/0/0/0/1/xlink.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/0/0/0/gcoBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/0/0/0/0/0/0/0/0/0/0/1/xlink.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/gmd.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/metadataEntity.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/gmd.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/0/spatialRepresentation.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/0/0/gss.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/0/0/0/geometry.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/0/0/gss.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/gmd.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/0/1/citation.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/gmd.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/0/1/0/referenceSystem.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/gmd.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/0/1/citation.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/0/1/0/0/extent.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/0/0/gss.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/0/1/0/0/0/gts.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.899
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/0/1/0/0/0/0/temporalObjects.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/0/1/0/0/0/gts.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/0/1/0/0/1/gsr.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/0/1/0/0/1/0/spatialReferencing.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/0/1/0/1/0/0/1/gsr.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:41] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322639166-0/resource1/0/3/0/0/0/gmd.xsd
+!SUBENTRY 1 eu.esdihumboldt.hale.common.headless 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] XML schema import
+!SUBENTRY 2 eu.esdihumboldt.hale.common.headless 1 0 2018-11-04 18:10:42.900
+!MESSAGE 297 information messages (listing 100)
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Starting task 'Loading schema'...
+!SUBENTRY 3 eu.esdihumboldt.hale.io.xsd 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Base URI for schemas to be used: resource://citygml.hale-schemas/2.0.0
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/appearance.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/dynamicFeature.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/feature.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryBasic2d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/measures.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/units.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/dictionary.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gmlBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/basicTypes.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/xlink/xlinks.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/temporal.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gmlBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/direction.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/topology.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryComplexes.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryAggregates.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryPrimitives.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryBasic2d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/coverage.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/feature.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/valueObjects.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/temporal.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/grids.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryAggregates.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/coordinateReferenceSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/coordinateSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/referenceSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryBasic2d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/temporal.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/datums.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/referenceSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/coordinateOperations.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/referenceSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/dataQuality.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/units.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/observation.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/feature.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/direction.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/valueObjects.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/defaultStyle.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/measures.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/smil/smil20.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/smil/smil20-language.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/smil/smil20.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/smil/xml-mod.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/temporalReferenceSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/temporalTopology.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/temporal.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/dictionary.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.900
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/xAL/xAL.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/bridge.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/building.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityFurniture.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityObjectGroup.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/generics.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/landUse.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/relief.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/transportation.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/tunnel.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/vegetation.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/waterBody.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/texturedSurface.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.io.xsd 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Base URI for schemas to be used: bundleresource://162.fwk1857910993/schemas
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading schema from bundleresource://162.fwk1857910993/schemas/xml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.io.xsd 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading includes and imports for schema at resource://citygml.hale-schemas/2.0.0/CityGML.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.io.xsd 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading includes and imports for schema at resource://citygml.hale-schemas/2.0.0/CityGML/appearance.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.io.xsd 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Loading includes and imports for schema at resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 1 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] hale alignment import
+!SUBENTRY 2 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Starting task 'Load hale alignment'...
+!SUBENTRY 2 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:42.901
+!MESSAGE [18:10:42] Finished task 'Load hale alignment'.
+
+!ENTRY eu.esdihumboldt.hale.io.gml 1 0 2018-11-04 18:10:42.949
+!MESSAGE Found 1 possible FeatureCollection elements, using element {http://www.opengis.net/gml}FeatureCollection
+
+!ENTRY eu.esdihumboldt.hale.io.gml 1 0 2018-11-04 18:10:46.540
+!MESSAGE Found 1 possible FeatureCollection elements, using element {http://www.opengis.net/gml}FeatureCollection
+
+!ENTRY eu.esdihumboldt.hale.common.headless 1 0 2018-11-04 18:10:46.581
+!MESSAGE GML file import
+!SUBENTRY 1 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:10:46.581
+!MESSAGE [18:10:46] Starting task 'Prepare loading of GML file'...
+
+!ENTRY eu.esdihumboldt.hale.common.align 1 0 2018-11-04 18:10:46.887
+!MESSAGE Instance transformation - Finished successfully
+
+!ENTRY eu.esdihumboldt.hale.common.headless 1 0 2018-11-04 18:10:46.981
+!MESSAGE XML export
+!SUBENTRY 1 eu.esdihumboldt.hale.io.gml 1 0 2018-11-04 18:10:46.981
+!MESSAGE [18:10:46] Geometry structure match: MultiPolygon - {http://www.opengis.net/gml}exterior, {http://www.opengis.net/gml/_Surface}choice, {http://www.opengis.net/gml}CompositeSurface, {http://www.opengis.net/gml}surfaceMember
+!SUBENTRY 1 eu.esdihumboldt.hale.io.gml 1 0 2018-11-04 18:10:46.981
+!MESSAGE [18:10:46] Geometry structure match: MultiPolygon - {http://www.opengis.net/gml}interior, {http://www.opengis.net/gml/_Surface}choice, {http://www.opengis.net/gml}CompositeSurface, {http://www.opengis.net/gml}surfaceMember
+!SESSION 2018-11-04 18:15:13.435 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -application hale.transform -project D:\Transform\TranRule\IndoorGML2CityGML.halez -source D:\Transform\Data\Source\IndoorGMLSample.gml -target D:\Transform\Data\Result\Indoor2City.gml -preset CityGML
+Command-line arguments:  -application hale.transform -project D:\Transform\TranRule\IndoorGML2CityGML.halez -source D:\Transform\Data\Source\IndoorGMLSample.gml -target D:\Transform\Data\Result\Indoor2City.gml -preset CityGML
+
+!ENTRY eu.esdihumboldt.hale.common.headless 1 0 2018-11-04 18:15:19.236
+!MESSAGE hale project archive import
+!SUBENTRY 1 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:17] Starting task 'Load project'...
+!SUBENTRY 1 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:17] No handler for external project file styles.sld found.
+!SUBENTRY 1 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:17] Finished task 'Load project'.
+!SUBENTRY 1 eu.esdihumboldt.hale.common.headless 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] XML schema import
+!SUBENTRY 2 eu.esdihumboldt.hale.common.headless 1 0 2018-11-04 18:15:19.236
+!MESSAGE 370 information messages (listing 100)
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Starting task 'Loading schema'...
+!SUBENTRY 3 eu.esdihumboldt.hale.io.xsd 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Base URI for schemas to be used: file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/dynamicFeature.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/feature.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/geometryAggregates.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/geometryPrimitives.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/geometryBasic2d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/0/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/0/0/measures.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/0/0/0/units.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/0/0/0/0/dictionary.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/0/0/0/0/0/gmlBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/0/0/0/0/0/0/basicTypes.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/0/0/0/0/0/1/xlink.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/0/0/0/0/0/1/0/xml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/1/temporal.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/0/0/0/0/0/gmlBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.236
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/1/direction.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/0/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/1/topology.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/1/0/geometryComplexes.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/geometryAggregates.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/2/coverage.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/feature.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/2/0/valueObjects.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/0/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/1/temporal.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/2/1/grids.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/0/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/geometryAggregates.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/coordinateReferenceSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/coordinateSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/referenceSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/0/0/0/0/dictionary.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/gmd.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/metadataApplication.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/0/0/basicTypes.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/0/0/0/0/0/1/xlink.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/0/0/0/gcoBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/0/0/0/0/0/0/0/0/0/0/1/xlink.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/gmd.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/metadataEntity.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/gmd.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/0/spatialRepresentation.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.237
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/0/0/gss.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/0/0/0/geometry.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/0/0/gss.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/gmd.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/0/1/citation.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/gmd.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/0/1/0/referenceSystem.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/gmd.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/0/1/citation.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/0/1/0/0/extent.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/0/0/gss.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/0/1/0/0/0/gts.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/0/1/0/0/0/0/temporalObjects.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/0/1/0/0/0/gts.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/0/1/0/0/1/gsr.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/0/1/0/0/1/0/spatialReferencing.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/0/gco.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/0/1/0/1/0/0/1/gsr.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from file:/C:/Users/DPRT-T~1/AppData/Local/Temp/1541322915693-0/resource1/0/3/0/0/0/gmd.xsd
+!SUBENTRY 1 eu.esdihumboldt.hale.common.headless 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] XML schema import
+!SUBENTRY 2 eu.esdihumboldt.hale.common.headless 1 0 2018-11-04 18:15:19.238
+!MESSAGE 297 information messages (listing 100)
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Starting task 'Loading schema'...
+!SUBENTRY 3 eu.esdihumboldt.hale.io.xsd 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Base URI for schemas to be used: resource://citygml.hale-schemas/2.0.0
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/appearance.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/dynamicFeature.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/feature.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryBasic2d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/measures.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/units.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/dictionary.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gmlBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/basicTypes.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/xlink/xlinks.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/temporal.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gmlBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/direction.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/topology.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryComplexes.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryAggregates.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryPrimitives.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryBasic2d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/coverage.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/feature.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/valueObjects.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/temporal.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/grids.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryBasic0d1d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryAggregates.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/coordinateReferenceSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/coordinateSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/referenceSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/geometryBasic2d.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/temporal.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/datums.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/referenceSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/coordinateOperations.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/referenceSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.238
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/dataQuality.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/units.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/observation.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/feature.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/direction.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/valueObjects.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/defaultStyle.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/measures.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/smil/smil20.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/smil/smil20-language.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/smil/smil20.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/smil/xml-mod.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/temporalReferenceSystems.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/temporalTopology.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/temporal.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/dictionary.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/xAL/xAL.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/bridge.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/building.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityFurniture.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityObjectGroup.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/generics.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/landUse.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/relief.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/transportation.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/tunnel.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/vegetation.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/waterBody.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/texturedSurface.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from resource://citygml.hale-schemas/2.0.0/CityGML/cityGMLBase.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.io.xsd 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Base URI for schemas to be used: bundleresource://162.fwk1857910993/schemas
+!SUBENTRY 3 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading schema from bundleresource://162.fwk1857910993/schemas/xml.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.io.xsd 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading includes and imports for schema at resource://citygml.hale-schemas/2.0.0/CityGML.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.io.xsd 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading includes and imports for schema at resource://citygml.hale-schemas/2.0.0/CityGML/appearance.xsd
+!SUBENTRY 3 eu.esdihumboldt.hale.io.xsd 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Loading includes and imports for schema at resource://citygml.hale-schemas/2.0.0/3.1.1/base/gml.xsd
+!SUBENTRY 1 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] hale alignment import
+!SUBENTRY 2 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:18] Starting task 'Load hale alignment'...
+!SUBENTRY 2 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:19.239
+!MESSAGE [18:15:19] Finished task 'Load hale alignment'.
+
+!ENTRY eu.esdihumboldt.hale.io.gml 1 0 2018-11-04 18:15:19.292
+!MESSAGE Found 1 possible FeatureCollection elements, using element {http://www.opengis.net/gml}FeatureCollection
+
+!ENTRY eu.esdihumboldt.hale.io.gml 1 0 2018-11-04 18:15:22.934
+!MESSAGE Found 1 possible FeatureCollection elements, using element {http://www.opengis.net/gml}FeatureCollection
+
+!ENTRY eu.esdihumboldt.hale.common.headless 1 0 2018-11-04 18:15:22.975
+!MESSAGE GML file import
+!SUBENTRY 1 eu.esdihumboldt.hale.common.core 1 0 2018-11-04 18:15:22.975
+!MESSAGE [18:15:22] Starting task 'Prepare loading of GML file'...
+
+!ENTRY eu.esdihumboldt.hale.common.align 1 0 2018-11-04 18:15:23.287
+!MESSAGE Instance transformation - Finished successfully
+
+!ENTRY eu.esdihumboldt.hale.common.headless 1 0 2018-11-04 18:15:23.379
+!MESSAGE XML export
+!SUBENTRY 1 eu.esdihumboldt.hale.io.gml 1 0 2018-11-04 18:15:23.379
+!MESSAGE [18:15:23] Geometry structure match: MultiPolygon - {http://www.opengis.net/gml}exterior, {http://www.opengis.net/gml/_Surface}choice, {http://www.opengis.net/gml}CompositeSurface, {http://www.opengis.net/gml}surfaceMember
+!SUBENTRY 1 eu.esdihumboldt.hale.io.gml 1 0 2018-11-04 18:15:23.379
+!MESSAGE [18:15:23] Geometry structure match: MultiPolygon - {http://www.opengis.net/gml}interior, {http://www.opengis.net/gml/_Surface}choice, {http://www.opengis.net/gml}CompositeSurface, {http://www.opengis.net/gml}surfaceMember
