@@ -7,6 +7,7 @@ OpenGDS/Conversion Tools licensed under the GNU Lesser General Public License (L
 ## Getting Started
 The follwing tools are required to build OpenGDS/Conversion:
 * Java Development Kit 8 (JDK 8)
+* [Apache Maven 3.x](https://maven.apache.org/download.cgi)
 * [Hale Studio 3.5](https://www.wetransform.to/downloads/)
 * [GDAL/OGR](https://trac.osgeo.org/osgeo4w/)
 
@@ -41,8 +42,8 @@ The follwing tools are required to build OpenGDS/Conversion:
         * User have to write until file extension
     * (Optional) Select the transformation rule file location
         * If user want to convert to (or from) IndoorGML and CityGML, user have to select the transformation rule file
-        * It is located in [res](/res) folder of OpenGDS/Conversion project
+        * It is located in [resource](/res) folder of OpenGDS/Conversion project
 4) Push transform button 
 
 ## Author
-* **Taehoon Kim** - taehoon.kim@pnu.edu
+* **Taehoon Kim** - taehoon.kim@pusan.ac.kr
