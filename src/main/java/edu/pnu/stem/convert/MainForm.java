@@ -43,7 +43,7 @@ public class MainForm {
         Preferences staticPrefs = Preferences.userNodeForPackage(StaticInfoSettingForm.class);
         Preferences dynamicPrefs = Preferences.userNodeForPackage(DynamicInfoSettingForm.class);
         jarLocation         = "\"" + staticPrefs.get(StaticInfoSettingForm.HALE_DIR, null) + "\\jre\\bin\\java\"";
-        haleLocation        = "\"" + staticPrefs.get(StaticInfoSettingForm.HALE_DIR, null) + "\\plugins\\org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar\"";
+        haleLocation        = "\"" + staticPrefs.get(StaticInfoSettingForm.HALE_DIR, null) + "\\plugins\\org.eclipse.equinox.launcher_1.5.0.v20180512-1130.jar\"";
         ogr2ogrLocation     = "\"" + staticPrefs.get(StaticInfoSettingForm.GDAL_DIR, null) + "\\ogr2ogr.exe\"";
 
         buttonTransform.addActionListener(e -> {
