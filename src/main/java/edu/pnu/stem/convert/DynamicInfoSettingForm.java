@@ -83,7 +83,7 @@ public class DynamicInfoSettingForm {
                 File file = fileChooser.getSelectedFile();
                 textFieldTransformRuleLocation.setText(file.getAbsolutePath());
 
-                prefs.put(TRANS_RULE_DIR, file.getAbsolutePath());
+                prefs.put(TRANS_RULE_DIR, textFieldTransformRuleLocation.getText());
             }
         });
         buttonSaveInfo.addActionListener(e -> {
